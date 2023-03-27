@@ -1,0 +1,29 @@
+{
+  "name": "investic-api",
+  "version": "1.0.0",
+  "description": "API of Investic project.",
+  "author": "https://github.com/divinoPV",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "compile": "tsc",
+    "dev": "nodemon --es-module-specifier-resolution=node ./dist/index.js"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.5.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "mongoose": "^7.0.3"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.10",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.0.2"
+  }
+}

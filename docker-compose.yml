@@ -1,0 +1,24 @@
+version: "3"
+
+networks:
+  mongo_investic-network:
+    external: true
+
+services:
+  investic-api-service:
+    build:
+      args:
+        API_PORT: "${API_PORT}"
+        NODE_VERSION: "${NODE_VERSION}"
+      context: "."
+      dockerfile: "docker/dev/Dockerfile"
+    container_name: "investic-api-container"
+    environment:
+      VIRTUAL_HOST: "${API_HOST}"
+      VIRTUAL_PORT: "${API_PORT}"
+    networks:
+      - "mongo_investic-network"
+    ports:
+      - "${API_PORT}:${API_PORT}"
+    volumes:
+      - ".:/api"

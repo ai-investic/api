@@ -1,0 +1,5 @@
+.env*
+!.env*.template
+dist
+.pnpm-store
+node_modules
