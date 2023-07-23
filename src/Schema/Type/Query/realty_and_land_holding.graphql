@@ -1,0 +1,4 @@
+type Query {
+  realtyAndLandholding(id: ID!): RealtyAndLandholding!
+  getCityAvgPropertyValue(municipality: String, postcode: String): Float!
+}

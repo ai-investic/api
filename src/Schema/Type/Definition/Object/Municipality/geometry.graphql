@@ -1,0 +1,6 @@
+scalar Unknown
+
+type Geometry {
+  type: String
+  coordinates: Unknown
+}

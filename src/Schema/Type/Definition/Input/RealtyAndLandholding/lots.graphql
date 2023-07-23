@@ -1,0 +1,4 @@
+input LotsRealtyAndLandholdingInput {
+  number: Int!,
+  values: [LotRealtyAndLandholdingInput]!
+}

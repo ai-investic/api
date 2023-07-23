@@ -1,0 +1,4 @@
+type SurfaceRealtyAndLandholding {
+  real_built: Int,
+  land: Int
+}

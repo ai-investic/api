@@ -46,7 +46,7 @@ purge:
 	docker image prune -f
 
 .PHONY: api
-# Enter the apily container
+# Enter in api container
 api:
 	${EXEC} investic-api-service ${SHELL}
 
@@ -70,3 +70,9 @@ del-dist:
 perm:
 	sudo chown -R www-data:$(USER) .
 	sudo chmod -R g+rwx .
+
+.PHONY: restart
+# Restart api correctly
+restart:
+	clear
+	make perm del-dist sr up logs

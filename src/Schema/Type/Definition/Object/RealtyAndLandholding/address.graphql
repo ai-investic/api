@@ -1,0 +1,7 @@
+type AddressRealtyAndLandholding {
+  street: StreetRealtyAndLandholding!,
+  postcode: Int!,
+  municipality: MunicipalityRealtyAndLandholding!,
+  department: String!,
+  section: SectionRealtyAndLandholding!
+}

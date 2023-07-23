@@ -1,0 +1,4 @@
+input SectionRealtyAndLandholdingInput {
+  prefix: String,
+  value: String!
+}

@@ -1,0 +1,4 @@
+type SectionRealtyAndLandholding {
+  prefix: String,
+  value: String!
+}

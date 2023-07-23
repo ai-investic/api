@@ -1,0 +1,4 @@
+input NatureCultureRealtyAndLandholdingInput {
+  value: String,
+  special: String
+}

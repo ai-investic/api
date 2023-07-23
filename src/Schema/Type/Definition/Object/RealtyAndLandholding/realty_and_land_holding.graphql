@@ -1,0 +1,6 @@
+type RealtyAndLandholding {
+  _id: ID!,
+  created_at: String!,
+  properties: PropertiesRealtyAndLandholding!,
+  source: String!
+}

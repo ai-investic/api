@@ -1,0 +1,4 @@
+input MunicipalityRealtyAndLandholdingInput {
+  code: Int!,
+  libelle: String!
+}

@@ -1,0 +1,4 @@
+input LotRealtyAndLandholdingInput {
+  number: String,
+  surface: Float
+}

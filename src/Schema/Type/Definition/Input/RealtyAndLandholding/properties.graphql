@@ -1,0 +1,10 @@
+input PropertiesRealtyAndLandholdingInput {
+  address: AddressRealtyAndLandholdingInput!,
+  mutation: MutationRealtyAndLandholdingInput!,
+  lots: LotsRealtyAndLandholdingInput!,
+  local: String,
+  surface: SurfaceRealtyAndLandholdingInput!,
+  rooms: Int!,
+  nature_culture: NatureCultureRealtyAndLandholdingInput!,
+  property_value: Float!
+}

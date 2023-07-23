@@ -1,0 +1,4 @@
+type NatureCultureRealtyAndLandholding {
+  value: String,
+  special: String
+}

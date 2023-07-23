@@ -1,0 +1,4 @@
+type MunicipalityRealtyAndLandholding {
+  code: Int!,
+  libelle: String!
+}

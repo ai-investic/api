@@ -1,0 +1,8 @@
+type Municipality {
+  _id: ID
+  name: String
+  code: String
+  geometry: Geometry
+  country: Int
+  cityAvgPropertyValue: Float
+}

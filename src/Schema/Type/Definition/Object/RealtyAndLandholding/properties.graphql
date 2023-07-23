@@ -1,0 +1,10 @@
+type PropertiesRealtyAndLandholding {
+  address: AddressRealtyAndLandholding!,
+  mutation: MutationRealtyAndLandholding!,
+  lots: LotsRealtyAndLandholding!,
+  local: String,
+  surface: SurfaceRealtyAndLandholding!,
+  rooms: Int!,
+  nature_culture: NatureCultureRealtyAndLandholding!,
+  property_value: Float!
+}

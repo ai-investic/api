@@ -1,0 +1,6 @@
+input StreetRealtyAndLandholdingInput {
+  number: String!,
+  type: String,
+  rivoli: String,
+  libelle: String!
+}

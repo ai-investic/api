@@ -1,0 +1,4 @@
+type LotRealtyAndLandholding {
+  number: String,
+  surface: Float
+}

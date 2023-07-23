@@ -5,12 +5,12 @@ import express from 'express';
 import http from 'http';
 import mongoose from 'mongoose';
 
-import { ApolloServer } from '@apollo/server';
-import { expressMiddleware } from '@apollo/server/express4';
-import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHttpServer';
+import {ApolloServer} from '@apollo/server';
+import {expressMiddleware} from '@apollo/server/express4';
+import {ApolloServerPluginDrainHttpServer} from '@apollo/server/plugin/drainHttpServer';
 
-import { typeDefs } from './Schema/Type/types';
-import { resolvers } from './Schema/Resolver/resolvers';
+import {typeDefs} from './Schema/Type/types';
+import {resolvers} from './Schema/Resolver/resolvers';
 
 interface MyContext {
   token?: String;
@@ -29,9 +29,9 @@ interface MyContext {
       const apollo = new ApolloServer<MyContext>({
         typeDefs,
         resolvers,
-        csrfPrevention: true,
+        csrfPrevention: false,
         cache: 'bounded',
-        plugins: [ApolloServerPluginDrainHttpServer({ httpServer })],
+        plugins: [ApolloServerPluginDrainHttpServer({httpServer})],
       });
 
       await apollo.start();
@@ -39,15 +39,15 @@ interface MyContext {
       app.use(
         '/',
         cors<cors.CorsRequest>(),
-        bodyParser.json({ limit: '50mb' }),
+        bodyParser.json({limit: '50mb'}),
         expressMiddleware(apollo, {
-          context: async ({ req }) => ({ token: req.headers.token }),
+          context: async ({req}) => ({token: req.headers.token}),
         }),
       );
 
-      await new Promise<void>(resolve => httpServer.listen({ port: Number(e.API_PORT) }, resolve));
+      await new Promise<void>(resolve => httpServer.listen({port: Number(e.API_PORT)}, resolve));
 
-      console.log(`🚀 Server ready at http://localhost:${ e.API_PORT }/`);
+      console.log(`🚀 Server ready at http://localhost:${e.API_PORT}/`);
     })
     .catch(error => console.error(error))
   ;

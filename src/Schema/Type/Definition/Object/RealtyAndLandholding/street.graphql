@@ -1,0 +1,6 @@
+type StreetRealtyAndLandholding {
+  number: String!,
+  type: String,
+  rivoli: String,
+  libelle: String!
+}

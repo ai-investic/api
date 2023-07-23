@@ -1,0 +1,4 @@
+input SurfaceRealtyAndLandholdingInput {
+  real_built: Int,
+  land: Int
+}

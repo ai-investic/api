@@ -1,0 +1,4 @@
+type LotsRealtyAndLandholding {
+  number: Int!,
+  values: [LotRealtyAndLandholding]!
+}

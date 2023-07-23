@@ -1,0 +1,7 @@
+input AddressRealtyAndLandholdingInput {
+  street: StreetRealtyAndLandholdingInput!,
+  postcode: Int!,
+  municipality: MunicipalityRealtyAndLandholdingInput!,
+  department: String!,
+  section: SectionRealtyAndLandholdingInput!
+}

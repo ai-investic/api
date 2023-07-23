@@ -1,0 +1,5 @@
+type MutationRealtyAndLandholding {
+  date: String!,
+  nature: String!,
+  number: Int!
+}

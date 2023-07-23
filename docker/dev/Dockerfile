@@ -6,7 +6,7 @@ FROM node:${NODE_VERSION}
 SHELL ["/bin/bash", "-c"]
 WORKDIR "/api"
 
-COPY /package.json .
+COPY package.json .
 
 RUN apt update -q \
   && apt upgrade -qy \
