@@ -39,8 +39,8 @@ export const RealtyAndLandholdingSchema = new Schema<RealtyAndLandholdingDocumen
       },
       local: {type: String, required: true},
       surface: {
-        real_built: {type: Number, required: true},
-        land: Number,
+        real_built: {type: Number, required: false},
+        land: {type: Number, required: false},
       },
       rooms: {type: Number, required: true},
       nature_culture: {

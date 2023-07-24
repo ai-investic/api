@@ -1,0 +1,5 @@
+type CityPropertyStats {
+  Appartement: PropertyStats
+  land: PropertyStats
+  Maison: PropertyStats
+}

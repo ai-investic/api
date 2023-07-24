@@ -1,0 +1,14 @@
+type PropertyStats {
+  avgPrice: Float!
+  avgRooms: Float!
+  avgBuiltArea: Float!
+  avgLandArea: Float!
+  maxPrice: Float!
+  maxRooms: Float!
+  maxBuiltArea: Float!
+  maxLandArea: Float!
+  minPrice: Float!
+  minRooms: Float!
+  minBuiltArea: Float!
+  minLandArea: Float!
+}

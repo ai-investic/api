@@ -35,7 +35,7 @@ export interface RealtyAndLandholdingDocument extends Document {
     };
     local: string;
     surface: {
-      real_built: number;
+      real_built: number | null;
       land: number | null;
     };
     rooms: number;
